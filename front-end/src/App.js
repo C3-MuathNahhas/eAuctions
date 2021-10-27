@@ -20,6 +20,7 @@ import orgchart from "./component/organization chart/orgchart";
 import FavUsersAuctions from "./component/favUsersAuctions/FavUsersAuctions";
 import Profile from "./component/profile/Profile";
 import SignUp from "./component/register";
+import OurTeam from "./component/ourTeam/OurTeam";
 
 function App() {
   return (
@@ -27,7 +28,9 @@ function App() {
       <NavBar />
       <div className="Perent">
         <SideBar />
+
         <Switch>
+          <Route exact path="/about" component={OurTeam} />
           <Route exact path="/payment" component={StripeContainer} />
           <Route exact path="/Admin" component={Admin} />
           <Route exact path="/login" component={Login} />

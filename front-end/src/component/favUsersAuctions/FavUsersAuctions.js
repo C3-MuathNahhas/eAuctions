@@ -107,7 +107,7 @@ function FavUsersAuctions() {
           <h2>
             <span>favoriets users Auctions</span>
           </h2>{" "}
-          <input placeholder="search" onChange={search}></input>
+          <input type="search" placeholder="search" onChange={search}></input>
         </div>
         <form>
           {favorietesIds &&

@@ -13,6 +13,7 @@
 .p-panelmenu-header > a:hover {
   background-color: transparent !important;
   border: none !important;
+  color: #ffffff !important;
 }
 .p-submenu-list {
   background-color: transparent !important;
@@ -25,12 +26,19 @@
 }
 .p-menuitem-text {
   /*outside text*/
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 .p-menuitem-icon {
   /*outside icon*/
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 .p-panelmenu-icon {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
+}
+.p-panelmenu
+  .p-panelmenu-content
+  .p-menuitem
+  .p-menuitem-link
+  .p-menuitem-icon {
+  margin-right: 0.5rem;
 }

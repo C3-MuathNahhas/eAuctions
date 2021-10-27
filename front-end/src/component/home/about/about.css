@@ -8,7 +8,16 @@ section {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  gap: 100px;
 }
+.abouts .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  gap: 50px;
+}
+
 .about .content .col-left {
   position: relative;
   width: 45%;
@@ -57,7 +66,7 @@ section {
   font-size: 20px;
   margin-bottom: 0;
 }
-.about .button {
+.abouts .button {
   border-radius: 10px;
   background-color: #ffa949;
   border: none;
@@ -65,7 +74,7 @@ section {
   padding: 13px 20px;
   font-size: 16px;
   cursor: pointer;
-  width: 180px;
+  width: 170px;
   font-weight: 800;
 }
 @media (max-width: 1040px) {
@@ -94,24 +103,30 @@ section {
   }
 }
 /*for liveAuction*/
-.liveAuctions{
+.liveAuctions {
   text-align: center;
 }
 .liveAuctions .btn1 {
-  padding:5px;
+  padding: 5px;
   font-size: 25px;
   color: white;
   border: none;
-  border-radius:5px;
+  border-radius: 5px;
   margin: 5px;
-  background-color:#ffa949;
+  background-color: #ffa949;
   width: 100px;
   cursor: pointer;
 }
-.liveAuctions input{
-  padding:11px;
+.liveAuctions input {
+  padding: 11px;
   width: 150px;
   display: inline-block;
   border: none;
   background-color: #ffffff;
+}
+.parag {
+  text-align: center;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
 }

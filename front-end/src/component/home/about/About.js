@@ -26,7 +26,9 @@ function About() {
               excitement as the timer counts down on your auction, has never
               been simpler.
             </p>
-            <Link to=""><button className="button">Read More</button></Link>
+            <Link to="/about">
+              <button className="button">Read More</button>
+            </Link>
           </div>
         </div>
       </section>

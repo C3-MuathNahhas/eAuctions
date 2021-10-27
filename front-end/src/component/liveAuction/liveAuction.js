@@ -314,22 +314,28 @@ function LiveAuction() {
               token={tokenHolder.token}
             ></CountDown>
           </div>
-          <section className="about" id="about">
+
+          <section className="abouts" id="about">
             <div className="content">
               <div className="column col-left reveal">
                 <div className="img-card">
                   <img src={data.auction.image} alt="" />
                 </div>
               </div>
+
               <div className="column col-right reveal">
                 <div
-                  style={{ display: "flex", justifyContent: "space-between" }}
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    marginLeft: "200px",
+                  }}
                 >
-                  <h2 className="content-title">{data.auction["user_name"]}</h2>
                   <button className="button" onClick={addUserToFavorite}>
                     <i className="pi pi-user-plus"> Favorite User </i>
                   </button>
                 </div>
+                <h2 className="content-title">{data.auction["user_name"]}</h2>
                 <div className="Aucation">
                   <h5> START Bid:{data.auction.starter_bid}$</h5>
                   <h5>
@@ -345,7 +351,7 @@ function LiveAuction() {
                       .format("YYYY-MM-DD HH:mm a")}
                   </h5>
                   <br />
-                  <p className="pr">{data.auction.details}</p>
+
                   <h5> Price Till Now: {lastBid}$</h5>
                   <h5>{lastBidder}</h5>
                   <br />
@@ -385,6 +391,7 @@ function LiveAuction() {
             </div>
           </section>
         </div>
+        <p className="parag">{data.auction.details}</p>
       </div>
       <Toast ref={toast} />
     </div>

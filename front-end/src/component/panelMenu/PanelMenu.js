@@ -22,17 +22,6 @@ const PanelMenuDemo = () => {
         {
           label: (
             <Link
-              to="/MyAuction"
-              style={{ textDecoration: "none", color: "#FFFFFF" }}
-            >
-              My Auction
-            </Link>
-          ),
-          icon: "pi pi-shopping-cart",
-        },
-        {
-          label: (
-            <Link
               to="/MyFavorites"
               style={{ textDecoration: "none", color: "#FFFFFF" }}
             >

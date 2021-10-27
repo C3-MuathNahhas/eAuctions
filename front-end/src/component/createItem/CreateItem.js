@@ -4,6 +4,7 @@ import "../createItem/CreateItem.css";
 import axios from "axios";
 import { useSelector } from "react-redux";
 import { storage } from "../firebase";
+import swal from "sweetalert";
 function CreateItem() {
   const state = useSelector((state) => {
     return {
@@ -54,9 +55,12 @@ function CreateItem() {
               )
 
               .then((result) => {
-                console.log(result.data);
+                swal("Good job!", "Item Created Successfuly", "success");
+                setTitle("");
+                setDetails("");
               })
               .catch((err) => {
+                swal("Try Again!");
                 console.log(err);
               });
           });
@@ -73,6 +77,7 @@ function CreateItem() {
             <h1>Create Item</h1>
             <div class="container-form">
               <input
+                value={title}
                 type="text"
                 placeholder="Title"
                 required
@@ -80,6 +85,7 @@ function CreateItem() {
               />
               <input type="file" onChange={handleChange} />
               <textarea
+                value={details}
                 onChange={Details}
                 class="textarea"
                 name=""

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../allAuctions/AllAuctions.css";
-import "../allAuctions/AllAuctions.css";
 import { setAuction } from "../../actions/auctionAction";
 import axios from "axios";
 import { useHistory } from "react-router";
@@ -32,7 +31,7 @@ function AllAuction() {
           <h2>
             <span>All Auctions</span>
           </h2>{" "}
-          <input placeholder="search" onChange={search}></input>
+          <input type="search" placeholder="search" onChange={search}></input>
         </div>
       </div>
       <div className="container-card">
